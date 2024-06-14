@@ -1,0 +1,218 @@
+.carousel-container {
+    border-radius: 20px;
+    position: relative;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    overflow: hidden;
+    background-color: #ffffff; /* Changed to white */
+    box-shadow: 5px 14px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .dynamicoffers {
+    display: flex;
+    min-width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 400px; /* Adjust as needed */
+    background-color: #ffffff; /* Ensure each slide has a white background */
+  }
+  
+  .profilesection {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .profilesection img {
+    padding: 22px;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 25px;
+  }
+  
+  .descriptionsection {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center the content horizontally */
+    padding: 20px; /* Increased padding for better spacing */
+    background-color: #ffffff; /* Ensure description section has a white background */
+  }
+  
+  .descriptionsection h1 {
+    font-size: 60px;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: 900;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center; /* Center the text */
+    text-shadow: -21px 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+  }
+  
+  .descriptionsection p {
+    font-size: 28px;
+    color: #ff6347; /* Tomato color for the discount text */
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(243, 97, 97, 0.725); /* Add shadow effect */
+  }
+  
+  .descriptionsection button {
+    display: flex; /* Add flex display to button */
+    align-items: center; /* Center align items vertically */
+    justify-content: center; /* Center align items horizontally */
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007bff; /* Blue button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; /* Optional: Add some margin-top if needed */
+  }
+  
+  .descriptionsection button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .carousel-button.left {
+    left: 10px;
+  }
+  
+  .carousel-button.right {
+    right: 10px;
+  }
+  
+  .carousel-indicators {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+  }
+  
+  .indicator {
+    width: 10px;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .indicator.active {
+    background-color: #007bff;
+  }
+  
+
+/* Mobile and Tablet View Styles */
+@media (max-width: 768px) {
+  .carousel-container {
+      width: 100%;
+      margin: 10px auto;
+      border-radius: 10px;
+  }
+
+  .dynamicoffers {
+      height: 300px; /* Adjust height for smaller screens */
+  }
+
+  .profilesection img {
+      padding: 10px;
+  }
+
+  .descriptionsection {
+      padding: 10px;
+  }
+
+  .descriptionsection h1 {
+      font-size: 40px;
+  }
+
+  .descriptionsection p {
+      font-size: 20px;
+  }
+
+  .descriptionsection button {
+      padding: 8px 16px;
+      font-size: 16px;
+  }
+
+  .carousel-button {
+      font-size: 1.5em;
+  }
+
+  .carousel-indicators {
+      bottom: 5px;
+  }
+
+  .indicator {
+      width: 8px;
+      height: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-container {
+      width: 100%;
+      margin: 5px auto;
+      border-radius: 5px;
+  }
+
+  .dynamicoffers {
+      height: 200px; /* Further adjust height for smaller screens */
+  }
+
+  .profilesection img {
+      padding: 5px;
+  }
+
+  .descriptionsection {
+      padding: 5px;
+  }
+
+  .descriptionsection h1 {
+      font-size: 30px;
+  }
+
+  .descriptionsection p {
+      font-size: 16px;
+  }
+
+  .descriptionsection button {
+      padding: 6px 12px;
+      font-size: 14px;
+  }
+
+  .carousel-button {
+      font-size: 1.2em;
+  }
+
+  .carousel-indicators {
+      bottom: 3px;
+  }
+
+  .indicator {
+      width: 6px;
+      height: 6px;
+  }
+}

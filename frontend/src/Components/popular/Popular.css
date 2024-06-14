@@ -1,0 +1,153 @@
+/* Popular.css */
+
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .productheading {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .productheading h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin: 0;
+  }
+  
+  .middleitem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .viewmore {
+    display: flex;
+    align-items: center;
+  }
+  
+  .viewmorebtn {
+    padding: 10px 10px;
+    font-size: 1.3rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+  }
+  
+  .viewmorebtn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* .viewmore-icon {
+    margin-right: 6px;
+    width: 20px;
+    height: 20px;
+  } */
+  
+  .itemlist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .griditems {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 23%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .griditems:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+  
+  .imageContainer {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .imageContainer img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .item-rating{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+  }
+  .item-like {
+    position: absolute;
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+  }
+  
+  .item-rating {
+    bottom: 10px;
+    left: 10px;
+  }
+  
+  .item-like {
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .item-like.liked img {
+    filter: invert(34%) sepia(95%) saturate(7498%) hue-rotate(346deg) brightness(98%) contrast(128%);
+  }
+  
+  .item-name {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 15px 0;
+  }
+  
+  .item-oldprice {
+    font-size: 1rem;
+    color: #999;
+    text-decoration: line-through;
+  }
+  
+  .item-newprice {
+    font-size: 1.2rem;
+    color: #e60023;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .griditems {
+      width: 48%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .griditems {
+      width: 100%;
+    }
+  }
+  
